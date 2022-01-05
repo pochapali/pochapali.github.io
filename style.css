@@ -1,0 +1,231 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #3e4756;
+}
+#content {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+  gap: 5px;
+}
+/* */
+headerheader {
+  display: none;
+}
+header {
+  display: none;
+}
+
+header,
+footer,
+.nav {
+  background-color: #0081cf;
+}
+article {
+  display: grid;
+  grid-template-rows: 10vh auto 1fr;
+  border-bottom: 5 px solid transparent;
+  gap: 20px 20px 0px 0px;
+}
+textheader {
+  color: #f3faff;
+  text-align: center;
+  font-size: 6vh;
+  font-family: "Teko";
+  grid-row: 1/2;
+}
+
+text {
+  color: #f3faff;
+  grid-row: 2/3;
+  font-size: 1.8rem;
+  font-family: sans-serif, arial, helvetica, sans-serif;
+}
+/* icons */
+/* .bi {
+  font-size: 2rem;
+  color: #f3faff;
+  background-color: transparent;
+} */
+.iconBox i {
+  color: black;
+  font-size: 2em;
+}
+#twitchBox {
+  grid-column: 2/3;
+}
+headerheader {
+  grid-column: 2/3;
+}
+.kabanIcon {
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  z-index: 1;
+  position: absolute;
+}
+.socialNetworks {
+  align-items: center;
+}
+.kabanIcon img {
+  width: 80px;
+}
+.nav a {
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  footer {
+    display: grid;
+    grid-template-columns: 60% 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    height: 10vw;
+  }
+  #imageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  text {
+    text-align: center;
+  }
+  .kabanIcon img {
+    display: none;
+  }
+}
+
+img {
+  max-width: 90vw;
+}
+footer {
+  grid-row: 2/3;
+}
+.nav {
+  display: none;
+}
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #0081cf;
+  color: white;
+}
+.contacts {
+  display: grid;
+  grid-template-columns: 5vw 1fr;
+  grid-template-rows: 1fr 1fr;
+  font-size: 20px;
+  align-items: center;
+  color: #f3faff;
+}
+.emailAddress {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.physicalAddress {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+@media screen and (min-width: 600px) {
+  header {
+    font-family: "Teko";
+    font-size: 8vh;
+    color: #f3faff;
+    align-items: center; /* align vertical */
+  }
+  headerheader {
+    display: block;
+    text-align: center;
+  }
+  #imageBox {
+    max-width: 80%;
+  }
+  .topnav {
+    display: none;
+  }
+  .nav {
+    display: block;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  textheader {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+  #content {
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: 11% 1fr 11%;
+    gap: 20px;
+    justify-content: auto;
+  }
+  article {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: sans-serif, arial, helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+  }
+  text {
+    font-size: 5vh;
+  }
+  footer,
+  header {
+    grid-column: 1/3;
+  }
+  footer {
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 80vw 1fr 1fr 1fr 1fr;
+    height: 5vw;
+  }
+  #shipBox {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  header {
+    grid-row: 1/2;
+    justify-content: center;
+    font-family: "Teko";
+    display: flex;
+    align-items: center;
+  }
+}

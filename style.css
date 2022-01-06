@@ -79,6 +79,7 @@ headerheader {
   #content {
     height: auto;
   }
+
   footer {
     display: grid;
     grid-template-columns: 60% 1fr 1fr 1fr 1fr;
@@ -150,14 +151,16 @@ footer {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #f3faff;
   color: black;
 }
 
 /* Style the active link (or home/logo) */
 .active {
   background-color: #0081cf;
-  color: white;
+  color: f3faff;
+  font-family: Teko;
+  font-size: 34px;
 }
 
 @media screen and (min-width: 768px) {

@@ -99,6 +99,9 @@ headerheader {
     justify-content: center;
     align-items: baseline;
   }
+  #imageBox img {
+    max-width: 90vw;
+  }
   text {
     text-align: center;
   }

@@ -76,11 +76,17 @@ headerheader {
   color: white;
 }
 @media only screen and (max-width: 768px) {
+  #content {
+    height: auto;
+  }
   footer {
     display: grid;
     grid-template-columns: 60% 1fr 1fr 1fr 1fr;
     grid-template-rows: 100%;
     height: 10vw;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
   .desktop {
     display: none;
@@ -91,7 +97,7 @@ headerheader {
   #imageBox {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
   }
   text {
     text-align: center;
